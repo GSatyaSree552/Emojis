@@ -1,0 +1,106 @@
+body{
+    background: radial-gradient(black,white);
+}
+h1{
+    text-align:center;
+}
+.face{
+    height:300px;
+    width:300px;
+    position:relative;
+    border-radius: 50%;
+    background: yellow;
+    margin:100px auto;
+   
+}
+.eye1{
+    height:80px;
+    width:80px;
+    position:absolute;
+    border-radius: 50%;
+    left: 40px;
+    top:70px;
+    background: white;
+}
+.eye2{
+    height:80px;
+    width:80px;
+    position:absolute;
+    border-radius: 50%;
+    left: 180px;
+    top:70px;
+    background: white;
+}
+.eyeball1{
+    height:30px;
+    width:30px;
+    position:absolute;
+    border-radius: 50%;
+    left: 65px;
+    top:95px;
+    background: black;
+
+}
+.eyeball2{
+    height:30px;
+    width:30px;
+    position:absolute;
+    border-radius: 50%;
+    left: 204px;
+    top:95px;
+    background: black;
+
+}
+.eyeball1,.eyeball2{
+    animation: updown 4s ease-in-out infinite;;
+}
+@keyframes updown{
+    0%{
+        transform:translateY(-20px);
+
+    }
+    50%{
+        transform:translateY(20px);
+
+    }
+    100%{
+        transform:translateY(-20px);
+    }
+}
+
+.mouth{
+    height:10px;
+    width:60px;
+    position:absolute;
+    border-radius: 10px;
+    left: 120px;
+    top:210px;
+    background: black;
+
+
+}
+.tongue{
+    height:30px;
+    width:50px;
+    position:absolute;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: 125px;
+    top:220px;
+    background: red;
+    animation:tongue 4s ease-in-out infinite;
+
+
+}
+@keyframes tongue{
+    0%{
+        height: 0px;
+    }
+    50%{
+        height: 39px;
+    }
+    100%{
+        height: 1px;
+    }
+}
+
